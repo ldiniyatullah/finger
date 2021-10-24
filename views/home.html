@@ -51,7 +51,7 @@
       <mwc-button><a href="/auth/signout">Sign out</a></mwc-button>
     </main>
     <script type="module">
-      import { _fetch, unregisterCredential} from '/client.js'; // TODO (2) - 4. & 5.
+      import { _fetch, unregisterCredential, registerCredential} from '/client.js'; // TODO (2) - 4. & 5.
       import { html, render } from 'https://unpkg.com/lit-html@1.0.0/lit-html.js?module';
 
       const register = document.querySelector('#register');
@@ -89,8 +89,20 @@
       };
       
       getCredentials();
-      // 4. Remove the credential: `removeCredential()`
-      // 5. Register a credential
+      
+      const removeCredential = async e => {
+        try {
+          await unregisterCredential(e.target.id);
+          getCredentials();
+        } catch (e) {
+          alert(e);
+        }
+      };
+      register.addEventListener('click', e => {
+        registerCredential().then(user => {
+          getCredentials();
+        }).catch(e => alert(e));
+      });
     </script>
   </body>
 </html>
