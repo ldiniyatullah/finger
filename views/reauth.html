@@ -32,10 +32,17 @@
       <span slot="title">WebAuthn codelab</span>
     </mwc-top-app-bar-fixed>
     <main class="content">
-      <!--
-        TODO(4): Enable reauth experience
-        1. Build UI
-      -->
+      <div id="uvpa_available" class="hidden">
+  <h2>
+    Verify your identity
+  </h2>
+  <div>
+    <mwc-button id="reauth" raised>Authenticate</mwc-button>
+  </div>
+  <div>
+    <mwc-button id="cancel">Sign-in with password</mwc-button>
+  </div>
+</div>
       <form id="form" method="POST" action="/auth/password"><!-- TODO(4) - 1. -->
         <h2>
           Enter a password
