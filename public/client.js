@@ -38,8 +38,9 @@ export const _fetch = async (path, payload = '') => {
   }
 };
 
-// TODO (1): Register a credential using a fingerprint
-// 1. Create `registerCredential()` function
+export const registerCredential = async () => {
+
+};
 // 2. Obtain the challenge and other options from server endpoint: `/auth/registerRequest`
 // 3. Create a credential
 // 4. Register the credential to the server endpoint: `/auth/registerResponse`
