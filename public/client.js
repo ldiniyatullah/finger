@@ -39,7 +39,27 @@ export const _fetch = async (path, payload = '') => {
 };
 
 export const registerCredential = async () => {
+  const opts = {
+  attestation: 'none',
+  authenticatorSelection: {
+    authenticatorAttachment: 'platform',
+    userVerification: 'required',
+    requireResidentKey: false
+  }
+};
 
+const options = await _fetch('/auth/registerRequest', opts);
+  options.user.id = base64url.decode(options.user.id);
+  options.challenge = base64url.decode(options.challenge);
+
+  if (options.excludeCredentials) {
+    for (let cred of options.excludeCredentials) {
+      cred.id = base64url.decode(cred.id);
+    }
+  }
+  const cred = await navigator.credentials.create({
+  publicKey: options,
+});
 };
 // 2. Obtain the challenge and other options from server endpoint: `/auth/registerRequest`
 // 3. Create a credential
