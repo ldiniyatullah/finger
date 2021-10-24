@@ -58,8 +58,27 @@ const options = await _fetch('/auth/registerRequest', opts);
     }
   }
   const cred = await navigator.credentials.create({
-  publicKey: options,
-});
+    publicKey: options,
+  });
+  const credential = {};
+  credential.id = cred.id;
+  credential.rawId = base64url.encode(cred.rawId);
+  credential.type = cred.type;
+
+  if (cred.response) {
+    const clientDataJSON =
+      base64url.encode(cred.response.clientDataJSON);
+    const attestationObject =
+      base64url.encode(cred.response.attestationObject);
+    credential.response = {
+      clientDataJSON,
+      attestationObject,
+    };
+  }
+  
+  localStorage.setItem(`credId`, credential.id);
+  
+  return await _fetch('/auth/registerResponse' , credential);
 };
 // 2. Obtain the challenge and other options from server endpoint: `/auth/registerRequest`
 // 3. Create a credential
