@@ -80,10 +80,10 @@ const options = await _fetch('/auth/registerRequest', opts);
   
   return await _fetch('/auth/registerResponse' , credential);
 };
-// 2. Obtain the challenge and other options from server endpoint: `/auth/registerRequest`
-// 3. Create a credential
-// 4. Register the credential to the server endpoint: `/auth/registerResponse`
-
+export const unregisterCredential = async (credId) => {
+  localStorage.removeItem('credId');
+  return _fetch(`/auth/removeKey?credId=${encodeURIComponent(credId)}`);
+};
 // TODO (2): Build the UI to register, get and remove credentials
 // 3. Remove the credential: `removeCredential()`
 
