@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "username": "Ledy",
+      "id": "pkTJ-KjIkNfISbzOYgJ2YMXYe1Zp8ov8ldkhmfL2iks",
+      "credentials": []
+    },
+    {
+      "username": "ldiniyatullah",
+      "id": "3vkjj6yUtNBPE2FYAPl0pQeWbfr3GsQeCD2tWye3Ehw",
+      "credentials": [
+        {
+          "publicKey": "pQECAyYgASFYIKlEJtJ8uY43oOnAv7mlE9ouFe6roG6sQDeWfG1_m4dRIlgg3L3bivdRyEd13Os6nlfQXiJGDcIijK1fsnyIWSha4bs",
+          "credId": "AbdbovoMNjA4zB6rr2vE0DXHSBNnAy8M0jQ7k5sjbPRAzKifZt7HHWO4DWndwgyyfhC-uKE4YgA8M-e3LGZNNsE",
+          "prevCounter": 6
+        }
+      ]
+    },
+    {
+      "username": "Ledi",
+      "id": "Gu7k2k3GsKrxwjhBaovY0B3z0zwC6ZAxE8YR6auEMHo",
+      "credentials": []
+    },
+    {
+      "username": "ledi",
+      "id": "8pFenG1PTA3M4JH4kuf8JGnfGy6VuduoTr0zs5vr7Mo",
+      "credentials": [
+        {
+          "publicKey": "pQECAyYgASFYIERce3wWq2-PbCydZ3X370ElXPDS1clp5_eMQ3dCt2zPIlggoqekPMxHCx2CwH-DYsf2DqBecXUIbV7Lt21BvYr6O-E",
+          "credId": "AdF9zQDxTj_JFS6Vdg5FMWyR1hwcXgtuLmjhcrgN3xidEDlhKiftV-w1lPIr2jSmwkCG8jWzyGxw2vropO_Mdog",
+          "prevCounter": 0
+        },
+        {
+          "publicKey": "pAEDAzkBACBZAQCgAdKq14FaK0ImF5gOikAlVofmZcTbGfFxJ52K80xCBDmITF1W1HG0eag628o8pBd7Q1jM1Rte9AiV_rmiPUDE97QPDiPINbdkxqR2vRJ23zvYIKCn1Bb7jturE_aanqikZHC1A6TJlKkMkvVahMekviZ-gUrxUrTtHU2XYFcLwCAl34zUkm5weZ4CQebVluLlqk0XKdfP1QTRW4JdN6UtIgrifBli6r-l93SIubvwR-F3TyrX8eUawpvjINp1OiV5LZ16hHt_nzKvYP6m5Tafbs4vybu11399EGS9ulDb5CcD9fLoepLIqqWBqd9hBr0RUCIA_QHcX3wMV0yykGt1IUMBAAE",
+          "credId": "1Mp4hPxFsBZcVzaSJgo0NPejN0jVsYndXB-4yL5WmfY",
+          "prevCounter": 0
+        }
+      ]
+    },
+    {
+      "username": "Feldi Hekmatyar",
+      "id": "ONqxKf2gnUh38N-LampK-vh8qzWqXYiOCfgQ2hw6E1Y",
+      "credentials": [
+        {
+          "publicKey": "pQECAyYgASFYIBPl_S1wmwE2AjN1FlwEkcuRX2fzBqsVKNvMSCBMVev5IlggKyNzGCGSRPxAZdYoxnAFOrSrqSD1OUL5SZfDzJarOf4",
+          "credId": "AY53DpdnNUZ400eEwGKgfnjR3Gx6kcMm5HSb91TC-_1Nz11u1imHr16OHBQV6Jm6cMOVZHl9u9sQ5au70GQ175U",
+          "prevCounter": 2
+        }
+      ]
+    },
+    {
+      "username": "Hoshi",
+      "id": "rltd8Lr4uBlEVG_FsnKM9liQColj5pBWSjAjwTo4wPc",
+      "credentials": []
+    },
+    {
+      "username": "rahmadyahsyirat ",
+      "id": "fUHwJuzxhydMciqAdBmUxPVm6mjU5Dfi2V2Axqp9ZeU",
+      "credentials": [
+        {
+          "publicKey": "pQECAyYgASFYIDe9QpLwbeSbfKwUDhMn08_6SVRRieWKE6ZHHITcxQnLIlggPRPCDUNK7Mvdcclk_UfSBxGtxxgJLcxx_G-bgczzAV8",
+          "credId": "zsvut5TQUuBMxRTZcMujoG81P2I",
+          "prevCounter": 0
+        }
+      ]
+    },
+    {
+      "username": "luky.vianika",
+      "id": "yJPR0hehcNjc0j4skjRsendxj9X1UfR8vrdPOL04X7s",
+      "credentials": []
+    }
+  ]
+}
